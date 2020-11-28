@@ -1,0 +1,15 @@
+# For this implementation can verify the program running the test cases
+# Can define different profiles here
+spring:
+  profiles:
+    active: test
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+---
+spring:
+  config:
+    activate:
+      on-profile: test
